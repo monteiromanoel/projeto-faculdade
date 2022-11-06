@@ -1,0 +1,19 @@
+.title-th {
+    width: 120px;
+    margin: auto;
+}
+.div-table {
+    width: fit-content;
+}
+h1 {
+    margin: auto;
+    text-align: center;
+}
+.span01 {
+    border: 1px solid black;
+    margin: auto;
+}
+input {
+    border: 1px solid rgba(128, 128, 128, 0.447);
+    border-radius: 2px;
+}
