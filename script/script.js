@@ -6,5 +6,9 @@ function lenghtConverter(valNum) {
 
 function changeFont() {
     var fon = document.getElementById("main-body");
-    if 
+    if (fon.className == "arial") {
+        fon.className = 'open-dyslexic';
+    } else {
+        fon.className = 'arial';
+    }
 }
