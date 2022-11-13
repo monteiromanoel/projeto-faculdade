@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
+    <title>Distância e Altura</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="/script/script.js"></script>
 </head>
@@ -20,34 +20,60 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li style="background-color: var(--color3); box-shadow: none;"><a href="pg2.html">Distância e Altura</a></li>
-                <li><a href="#">Página 2</a></li>
-                <li><a href="#">Página 3</a></li>
-                <li><a href="#">Página 4</a></li>
+                <li style="background-color: var(--color3); box-shadow: none;"><a href="pg2.html">Distância e Altura</a>
+                </li>
+                <li><a href="pg3.html">Página 2</a></li>
+                <li><a href="pg4.html">Página 3</a></li>
+                <li><a href="pg5.html">Página 4</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="flex-container">
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia reiciendis magnam ab, tempore eligendi voluptatem. Sed suscipit earum quibusdam velit itaque numquam vitae nam rem. Nisi facilis soluta tenetur.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia reiciendis magnam ab,
+                tempore eligendi voluptatem. Sed suscipit earum quibusdam velit itaque numquam vitae nam rem. Nisi
+                facilis soluta tenetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit expedita sed dicta id fugiat
+                suscipit, quidem dolorum accusamus totam ipsum repellendus nihil quasi doloribus omnis voluptates
+                voluptatibus officiis laborum?
             </p>
             <br>
-            <hr> 
+            <hr>
             <br>
-            <div class="div-block">
-                <label for="inputCm">Centímetros: </label>
-                <input type="number" name="centimeters" id="inputCm" placeholder="Insira o valor aqui"
-                    oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)" class="class-outputCm">
+            <div id="div-content">
+                <div class="div-block">
+                    <label for="inputCm" class="flex-column-1">Centímetros: </label>
+                    <input type="number" name="centimeters" id="inputCm" placeholder="Insira o valor aqui"
+                        oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)"
+                        class="class-outputCm flex-column-2">
+                </div>
+
+                <p>
+                    <label for="outputMeters" class="flex-column=1">Metros: </label>
+                    <span id="outputMeters" placeholder="Metros" class="flex-column-2">0</span>
+                </p>
+                <p>
+                    <label for="outputKm">Quilômetros</label>
+                    <span id="outputKm">0</span>
+                </p>
+                <p>
+                    <label for="outputInches">Polegadas: </label>
+                    <span id="outputInches">0</span>
+                </p>
+                <p>
+                    <label for="outputYard">Jardas: </label>
+                    <span id="outputYard">0</span>
+                </p>
+                <p>
+                    <label for="outputMile">Milhas: </label>
+                    <span id="outputMile">0</span>
+                </p>
+                <p>
+                    <label for="outputFoot">Pés: </label>
+                    <span id="outputFoot">0</span>
+                </p>
             </div>
-            <p>
-                <label for="">Metros: </label>
-                <span id="outputMeters" placeholder="Metros">0</span>
-            </p>
-            <p>
-                <label for="outputInches">Polegadas: </label>
-                <span id="outputInches">0</span>
-            </p>
         </div>
     </main>
 </body>
