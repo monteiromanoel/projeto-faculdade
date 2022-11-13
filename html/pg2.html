@@ -12,36 +12,44 @@
 
 <body id="main-body">
     <header>
-        <div>
-            <h1>Título</h1>
+        <div class="div-header">
+            <h1>Distância e Altura</h1>
+            <button id="bt-font" onclick="changeFont()">Acessibilidade
+            </button>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pg2.html">Página 1</a></li>
+                <li style="background-color: var(--color3); box-shadow: none;"><a href="pg2.html">Distância e Altura</a></li>
                 <li><a href="#">Página 2</a></li>
                 <li><a href="#">Página 3</a></li>
                 <li><a href="#">Página 4</a></li>
             </ul>
         </nav>
     </header>
-    <div class="flex-container">
-        <div class="div-block">
-            <label for="inputCm">Centímetros: </label>
-            <input type="number" name="centimeters" id="inputCm" placeholder="Insira o valor aqui"
-                oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)" class="class-outputCm">
+    <main>
+        <div class="flex-container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia reiciendis magnam ab, tempore eligendi voluptatem. Sed suscipit earum quibusdam velit itaque numquam vitae nam rem. Nisi facilis soluta tenetur.
+            </p>
+            <br>
+            <hr> 
+            <br>
+            <div class="div-block">
+                <label for="inputCm">Centímetros: </label>
+                <input type="number" name="centimeters" id="inputCm" placeholder="Insira o valor aqui"
+                    oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)" class="class-outputCm">
+            </div>
+            <p>
+                <label for="">Metros: </label>
+                <span id="outputMeters" placeholder="Metros">0</span>
+            </p>
+            <p>
+                <label for="outputInches">Polegadas: </label>
+                <span id="outputInches">0</span>
+            </p>
         </div>
-        <p>
-            <label for="">Metros: </label>
-            <span id="outputMeters" placeholder="Metros">0</span>
-        </p>
-        <p>
-            <label for="outputInches">Polegadas: </label>
-            <span id="outputInches">0</span>
-        </p>
-    </div>
-    <button id="bt-font" onclick="changeFont()">Teste de fonte
-    </button>
+    </main>
 </body>
 
 </html>
