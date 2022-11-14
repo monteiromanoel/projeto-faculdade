@@ -26,19 +26,29 @@ header {
     margin: auto;
     padding: auto;
     width: 100%;
-    background-color: var(--color2);
+    background-color: none;
     border-radius: 7px;
 }
 .header-index {
-    height: 16vh;
-    padding-top: 8vh;
+    height: 30vh;
+    padding: 0;
     margin-bottom: 20px;
+    background-color: none;
+}
+.div-header-index {
+    border-radius: 10px;
+    max-width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    background-image: url(/image/banner-1-1600x300.jpg);
+
 }
 .div-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px 18px 4px 4px;
 }
 #bt-font {
     font-family: "open-dyslexic";
