@@ -41,17 +41,66 @@
             <br>
             <hr>
             <br>
+
+            <section>
+                <div class="grid-container">
+                    <div class="grid-item-1">
+                        <label for="inputCm">Centímetros: </label>
+                    </div>
+                    <div class="grid-item-2">
+                        <input type="number" name="centimeters" id="inputCm" placeholder="Insira o valor aqui"
+                        oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)">
+                    </div>
+                    <div class="grid-item-1">
+                        Metros:
+                    </div>
+                    <div class="grid-item-2">
+                        <span id="outputMeters" placeholder="Metros">0</span>
+                    </div>
+                    <div    class="grid-item-1">
+                        <label for="outputKm">Quilômetros: </label>
+                    </div>
+                    <div class="grid-item-2">
+                        <span id="outputKm">0</span>
+                    </div>
+                    <div class="grid-item-1">
+                        <label for="outputInches">Polegadas: </label>
+                    </div>
+                    <div class="grid-item-2">
+                        <span id="outputInches">0</span>
+                    </div>
+                    <div class="grid-item-1">
+                        <label for="outputYard">Jardas: </label>
+                    </div>
+                    <div class="grid-item-2">
+                        <span id="outputYard">0</span>
+                    </div>
+                    <div class="grid-item-1">
+                        <label for="outputMile">Milhas: </label>
+                    </div>
+                    <div class="grid-item-2">
+                        <span id="outputMile">0</span>
+                    </div>
+                    <div class="grid-item-1">
+                        <label for="outputFoot">Pés: </label>
+                    </div>
+                    <div class="grid-item-2">
+                        <span id="outputFoot">0</span>
+                    </div>
+                </div>
+            </section>
+
+            <!--
             <div id="div-content">
                 <div class="div-block">
-                    <label for="inputCm" class="flex-column-1">Centímetros: </label>
+                    <label for="inputCm">Centímetros: </label>
                     <input type="number" name="centimeters" id="inputCm" placeholder="Insira o valor aqui"
-                        oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)"
-                        class="class-outputCm flex-column-2">
+                        oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)">
                 </div>
 
                 <p>
-                    <label for="outputMeters" class="flex-column=1">Metros: </label>
-                    <span id="outputMeters" placeholder="Metros" class="flex-column-2">0</span>
+                    <label for="outputMeters">Metros: </label>
+                    <span id="outputMeters" placeholder="Metros">0</span>
                 </p>
                 <p>
                     <label for="outputKm">Quilômetros</label>
@@ -74,6 +123,7 @@
                     <span id="outputFoot">0</span>
                 </p>
             </div>
+            -->
         </div>
     </main>
 </body>
