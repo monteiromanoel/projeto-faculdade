@@ -63,7 +63,7 @@ header {
 }
 #bt-font:hover {
     background-color: tomato;
-    color: black;
+    color: rgb(255, 255, 255);
     box-shadow: none;
     top: 5px;
     position: relative;
@@ -104,9 +104,10 @@ li {
 ul > li:hover{
     background-color: var(--color3);
     box-shadow: none;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
     position: relative;
     top: 5px;
+    text-decoration:underline;
 }
 
 /*Main content settings*/
