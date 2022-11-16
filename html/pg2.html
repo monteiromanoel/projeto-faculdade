@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distância e Altura</title>
+    <link rel="shortcut icon" href="/image/favicon/favicon-measure-w-bg.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/script/script.js"></script>
 </head>
@@ -20,7 +21,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li style="background-color: rgba(255, 99, 71, 0.688); box-shadow: none;"><a href="pg2.html">Distância e Altura</a>
+                <li style="background-color: rgba(255, 99, 71, 0.688); box-shadow: none;"><a href="pg2.html">Distância e
+                        Altura</a>
                 </li>
                 <li><a href="pg3.html">Peso</a></li>
                 <li><a href="pg4.html">Líquidos</a></li>
@@ -31,7 +33,9 @@
     <main>
         <div class="flex-container">
             <p>
-                O comprimento e a distância, no sistema de medidas americano, é medido em polegadas (inches), pés (feet), jardas (yards) e milhas (miles). Ao escrever comprimentos em pés e polegadas, é comum abreviar. 6 pés e 2 polegadas, por exemplo, podem ser escritos como 6'2".
+                O comprimento e a distância, no sistema de medidas americano, é medido em polegadas (inches), pés
+                (feet), jardas (yards) e milhas (miles). Ao escrever comprimentos em pés e polegadas, é comum abreviar.
+                6 pés e 2 polegadas, por exemplo, podem ser escritos como 6'2".
             </p>
             <br>
             <hr>
@@ -40,44 +44,46 @@
             <section>
                 <div class="grid-container">
                     <div class="grid-item-1">
-                        <label for="inputCm">Centímetros: </label>
+                        <abbr title="Centimeters"><label for="inputCm">Centímetros: </label></abbr>
                     </div>
                     <div class="grid-item-2">
                         <input type="number" name="centimeters" id="inputCm" placeholder="Insira o valor aqui"
-                        oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)">
+                            oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)">
                     </div>
                     <div class="grid-item-1">
-                        Metros:
+                        <abbr title="Meters"><label for="outputKm">Metros: </label></abbr>
                     </div>
                     <div class="grid-item-2">
                         <span id="outputMeters" placeholder="Metros" class="span-output">0</span>
                     </div>
-                    <div    class="grid-item-1">
-                        <label for="outputKm">Quilômetros: </label>
+                    <div class="grid-item-1">
+                        <abbr title="Kilometers"><label for="outputKm">Quilômetros: </label></abbr>
                     </div>
                     <div class="grid-item-2">
                         <span id="outputKm" class="span-output">0</span>
                     </div>
                     <div class="grid-item-1">
-                        <label for="outputInches">Polegadas: </label>
+                        <abbr title="Inches">
+                            <label for="outputInches">Polegadas: </label></abbr>
+
                     </div>
                     <div class="grid-item-2">
                         <span id="outputInches" class="span-output">0</span>
                     </div>
                     <div class="grid-item-1">
-                        <label for="outputYard">Jardas: </label>
+                        <abbr title="Yards"><label for="outputYard">Jardas: </label></abbr>
                     </div>
                     <div class="grid-item-2">
                         <span id="outputYard" class="span-output">0</span>
                     </div>
                     <div class="grid-item-1">
-                        <label for="outputMile">Milhas: </label>
+                        <abbr title="Miles"><label for="outputMile">Milhas: </label></abbr>
                     </div>
                     <div class="grid-item-2">
                         <span id="outputMile" class="span-output">0</span>
                     </div>
                     <div class="grid-item-1">
-                        <label for="outputFoot">Pés: </label>
+                        <abbr title="Feet"><label for="outputFoot">Pés: </label></abbr>
                     </div>
                     <div class="grid-item-2">
                         <span id="outputFoot" class="span-output">0</span>
@@ -122,7 +128,8 @@
         </div>
     </main>
     <footer>
-        <p>Site criado por <a href="https://github.com/monteiromanoel">Manoel</a> para a escola <a href="https://m.facebook.com/people/Harvest-Kaer/100068662746449/">Harvest Kaer</a></p>
+        <p>Site criado por <a href="https://github.com/monteiromanoel">Manoel</a> para a escola <a
+                href="https://m.facebook.com/people/Harvest-Kaer/100068662746449/">Harvest Kaer</a></p>
     </footer>
 </body>
 

@@ -82,6 +82,8 @@ h1 {
     text-align: center;
     color: blue;
     text-decoration: underline;
+    font-size: 2.5em;
+    padding-bottom: 5px;
 }
 h1 > span {
     color: red;

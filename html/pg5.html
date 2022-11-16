@@ -5,52 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peso</title>
+    <title>Temperatura</title>
+    <link rel="shortcut icon" href="/image/favicon/favicon-weigth-w-bg.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/script/script.js"></script>
 </head>
 
 <body id="main-body">
-    <header>
+    <header class="header-pgs">
         <div class="div-header">
-            <h1>Peso</h1>
-            <button id="bt-font" onclick="changeFont()">Acessibilidade
+            <h1>TEMPE<span>RATURA</span></h1>
+            <button id="bt-font" onclick="changeFont()"><abbr title="Acessibilidade para Dislexia">Acessibilidade</abbr>
             </button>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pg2.html">Distância e Altura</a></li>
+                <li><a href="pg2.html">Distância e Altura</a>
+                </li>
                 <li><a href="pg3.html">Peso</a></li>
                 <li><a href="pg4.html">Líquidos</a></li>
-                <li style="background-color: var(--color3); box-shadow: none;"><a href="pg5.html">Temperatura</a></li>
+                <li style="background-color: rgba(255, 99, 71, 0.688); box-shadow: none;"><a href="pg5.html">Temperatura</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="flex-container">
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia reiciendis magnam ab, tempore eligendi voluptatem. Sed suscipit earum quibusdam velit itaque numquam vitae nam rem. Nisi facilis soluta tenetur.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam fugit expedita sed dicta id fugiat suscipit, quidem dolorum accusamus totam ipsum repellendus nihil quasi doloribus omnis voluptates voluptatibus officiis laborum?
+                As escalas de temperatura também são diferentes no sistema de medidas americano. Nele, a temperatura é calculada em Fahrenheit, não em graus Celsius.
+                <br>
+                <p>Obs.: Para cálculos de química e física, também utiliza-se a escala de temperatura Kelvin.</p>
             </p>
             <br>
-            <hr> 
+            <hr>
             <br>
-            <div class="div-block">
-                <label for="inputCm">Centímetros: </label>
-                <input type="number" name="centimeters" id="inputCm" placeholder="Insira o valor aqui"
-                    oninput="lenghtConverter(this.value)" onchange="lenghtConverter(this.value)" class="class-outputCm">
-            </div>
-            <p>
-                <label for="">Metros: </label>
-                <span id="outputMeters" placeholder="Metros">0</span>
-            </p>
-            <p>
-                <label for="outputInches">Polegadas: </label>
-                <span id="outputInches">0</span>
-            </p>
+
+            <section>
+                <div class="grid-container">
+                    <div class="grid-item-1">
+                        <abbr title="Celcius"><label for="inputCel">Celsius (°C): </label></abbr>
+                    </div>
+                    <div class="grid-item-2">
+                        <input type="number" name="Gc" id="inputGc" placeholder="Insira o valor aqui"
+                        oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                    </div>
+                    <div    class="grid-item-1">
+                        <abbr title="Fahrenheit"><label for="outputFah">Fahrenheit (°F): </label></abbr>
+                    </div>
+                    <div class="grid-item-2">
+                        <span id="outputFah" class="span-output">0</span>
+                    </div>
+                    <div class="grid-item-1">
+                        <abbr title="Kelvin"><label for="outputKel">Kelvin (K): </label></abbr>
+                    </div>
+                    <div class="grid-item-2">
+                        <span id="outputKel" class="span-output">0</span>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/monteiromanoel">Manoel</a> para a escola <a href="https://m.facebook.com/people/Harvest-Kaer/100068662746449/">Harvest Kaer</a></p>
+    </footer>
 </body>
 
 </html>
