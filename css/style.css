@@ -21,7 +21,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(211, 211, 211, 0.266); 
 }
-
+abbr {
+    text-decoration: none;
+}
 
 /*Header Settings*/
 header {
@@ -63,6 +65,9 @@ header {
     box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.434);
     display: inline-block;
 }
+.bt-font-index {
+    display: inline-block;
+}
 #bt-font:hover {
     background-color: tomato;
     color: rgb(255, 255, 255);
@@ -75,7 +80,13 @@ header {
 h1 {
     margin: auto;
     text-align: center;
+    color: blue;
+    text-decoration: underline;
 }
+h1 > span {
+    color: red;
+}
+
 ul{
     list-style-type: none;
     display: flex;
@@ -104,7 +115,7 @@ li {
     display: inline-block;
 }
 ul > li:hover{
-    background-color: var(--color3);
+    background-color: tomato;
     box-shadow: none;
     transition-duration: 200ms;
     position: relative;
@@ -127,6 +138,12 @@ main {
 main > p {
     text-align: justify;
 }
+.txt-link {
+    color: rgb(72, 72, 252); cursor: pointer;
+}
+.txt-link:hover {
+    text-decoration: underline;
+}
 .flex-container {
     display: block;
     width: fit-content;
@@ -138,9 +155,8 @@ main > p {
     margin: auto;
     display: flex;
     flex-direction: column;
-
 }
-span {
+.span-output {
     display: inline-block;
     position: relative;
     margin: 1px;
@@ -169,6 +185,17 @@ input {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.395);
+    color: white;
+    text-align: center;
+}
+footer > p {
+    padding: 1.5px;
+}
+footer > p > a:hover {
+    color: blue;
 }
 
 
