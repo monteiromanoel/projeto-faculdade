@@ -53,7 +53,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
 }
-#bt-font {
+#bt-font, #bt-font-index{
     font-family: "open-dyslexic";
     background-color: var(--color1);
     cursor: pointer;
@@ -68,7 +68,7 @@ header {
 .bt-font-index {
     display: inline-block;
 }
-#bt-font:hover {
+#bt-font:hover, #bt-font-index:hover{
     background-color: tomato;
     color: rgb(255, 255, 255);
     box-shadow: none;
@@ -196,7 +196,7 @@ footer {
 footer > p {
     padding: 1.5px;
 }
-footer > p > a:hover {
+.link-footer:hover{
     color: blue;
 }
 

@@ -7,7 +7,7 @@
     <title>Página Principal</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body id="body-index">
     <header class="header-index">
         <div class="div-header-index">
         </div>
@@ -15,7 +15,7 @@
         <main>
             <div>
                 <div class="div-header">
-                    <button id="bt-font" class="bt-font-index" onclick="changeFont()" ><abbr title="Acessibilidade para Dislexia">Acessibilidade</abbr>
+                    <button id="bt-font-index" class="bt-font-index" onclick="changeFontIndex()"><abbr title="Acessibilidade para Dislexia">Acessibilidade</abbr>
                     </button>
                 </div>
                 <p>O sistema de medidas americano é também chamado de <a href="https://pt.wikipedia.org/wiki/Unidade_inglesa" class="txt-link">Sistema Imperial Britânico</a>, pois foi difundido pelo Império Britânico, que governava boa parte do mundo entre os séculos XVI e XIX. Após a independência dos EUA em 1776, o “Novo” governo norte-americano decidiu manter o sistema de medição britânico.</p>
@@ -37,7 +37,17 @@
             </nav>
         </main>
         <footer>
-            <p>Site criado por <a href="https://github.com/monteiromanoel" target="_blank">Manoel</a> para a escola <a href="https://m.facebook.com/people/Harvest-Kaer/100068662746449/" target="_blank">Harvest Kaer 123</a></p>
+            <p>Site criado por <a href="https://github.com/monteiromanoel" target="_blank" class="link-footer"><b>Manoel</b></a> para a escola <a href="https://m.facebook.com/people/Harvest-Kaer/100068662746449/" target="_blank" class="link-footer"><b>Harvest Kaer</b></a></p>
         </footer>
     </body>
+    <script>
+        function changeFontIndex() {
+            var font = document.getElementById('body-index');
+            if (font.className == 'arial') {
+                font.className = 'open-dyslexic'
+            } else {
+                font.className = 'arial';
+            }
+        }
+    </script>
 </html>
