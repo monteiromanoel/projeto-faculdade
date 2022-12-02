@@ -5,10 +5,10 @@
     src: url(/font/OpenDyslexic-Regular.otf) format(opentype);
 }
 :root {
-    --color1: rgb(63, 63, 248);
-    --color2: aqua;
-    --color3: rgba(63, 63, 248, 0.625);
-    --colorbg: rgba(211,211,211,0.266);
+    --color1: #3f3ff8;
+    --color2: #FF6819;
+    --color3: #0000ff;
+    --colorbg: #d3d3d344;
 }
 .arial {
     font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +70,7 @@ header {
     display: inline-block;
 }
 #bt-font:hover, #bt-font-index:hover{
-    background-color: tomato;
+    background-color: var(--color2);
     color: rgb(255, 255, 255);
     box-shadow: none;
     top: 5px;
@@ -87,7 +87,7 @@ h1 {
     padding-bottom: 5px;
 }
 h1 > span {
-    color: red;
+    color: var(--color2);
 }
 
 ul{
@@ -118,7 +118,7 @@ li {
     display: inline-block;
 }
 ul > li:hover{
-    background-color: tomato;
+    background-color: var(--color2);
     box-shadow: none;
     transition-duration: 200ms;
     position: relative;
