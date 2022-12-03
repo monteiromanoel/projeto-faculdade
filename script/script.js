@@ -42,5 +42,23 @@ function changeFont() {
     }
 }
 
+function changeFontIndex() {
+    var font = document.getElementById('body-index');
+    if (font.className == 'arial') {
+        font.className = 'open-dyslexic'
+    } else {
+        font.className = 'arial';
+    }
+}
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("../sw.js").then(registration => {
+        console.log("SW Registered!");
+        console.log(registration);
+    }).catch(error => {
+        console.log("SW Registration Failed!");
+        console.log(error);
+    });
+}
 
 
