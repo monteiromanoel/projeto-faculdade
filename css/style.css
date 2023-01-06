@@ -39,6 +39,11 @@ header {
     text-align: center;
     height: 8em;
     padding: 10px;
+}
+.header-index > h1 {
+    margin: auto;
+    text-align: center;
+    padding: auto;
     
 }
 /*.header-index {
@@ -203,9 +208,16 @@ footer {
     background-color: rgba(0, 0, 0, 0.395);
     color: white;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: fit-content;
+
+
 }
 footer > p {
-    padding: 1.5px;
+    padding: auto;
+    margin: 2px;
 }
 .link-footer:hover{
     color: blue;
