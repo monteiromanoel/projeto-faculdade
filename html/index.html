@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../image/favicon/favicon2.ico" type="image/x-icon">
     <title>Página Principal</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="apple-touch-icon" href="../image/Logo 512x512.png">
+    <script src="../script/script.js"></script>
 </head>
 <body id="body-index">
     <header class="header-index">
-        <div class="div-header-index">
+        <div class="header-index">
+            <h1>CONVERSOR <span>AMERICANO</span></h1>
         </div>
     </header>
         <main>
@@ -19,7 +22,7 @@
                     <button id="bt-font-index" class="bt-font-index" onclick="changeFontIndex()"><abbr title="Acessibilidade para Dislexia">Acessibilidade</abbr>
                     </button>
                 </div>
-                <p>O sistema de medidas americano é também chamado de <a href="https://pt.wikipedia.org/wiki/Unidade_inglesa" class="txt-link">Sistema Imperial Britânico</a>, pois foi difundido pelo Império Britânico, que governava boa parte do mundo entre os séculos XVI e XIX. Após a independência dos EUA em 1776, o “Novo” governo norte-americano decidiu manter o sistema de medição britânico.</p>
+                <p>O sistema de medidas americano é também chamado de <a href="https://pt.wikipedia.org/wiki/Unidade_inglesa" class="txt-link" target="_blank">Sistema Imperial Britânico</a>, pois foi difundido pelo Império Britânico, que governava boa parte do mundo entre os séculos XVI e XIX. Após a independência dos EUA em 1776, o “Novo” governo norte-americano decidiu manter o sistema de medição britânico.</p>
                 <p>
                     Selecione abaixo qual tipo de conversão você deseja fazer.
                 </p>
@@ -37,18 +40,9 @@
                 </ul>
             </nav>
         </main>
-        <footer>
+        <!--<footer>
             <p>Site criado por <a href="https://github.com/monteiromanoel" target="_blank" class="link-footer"><b>Manoel</b></a> para a escola <a href="https://m.facebook.com/people/Harvest-Kaer/100068662746449/" target="_blank" class="link-footer"><b>Harvest Kaer</b></a></p>
         </footer>
+        -->
     </body>
-    <script>
-        function changeFontIndex() {
-            var font = document.getElementById('body-index');
-            if (font.className == 'arial') {
-                font.className = 'open-dyslexic'
-            } else {
-                font.className = 'arial';
-            }
-        }
-    </script>
 </html>

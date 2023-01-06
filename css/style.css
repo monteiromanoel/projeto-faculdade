@@ -34,7 +34,19 @@ header {
     background-color: none;
     border-radius: 7px;
 }
-.header-index {
+.header-index{
+    margin: auto;
+    text-align: center;
+    height: 8em;
+    padding: 10px;
+}
+.header-index > h1 {
+    margin: auto;
+    text-align: center;
+    padding: auto;
+    
+}
+/*.header-index {
     height: 30vh;
     padding: 0;
     margin-bottom: 20px;
@@ -49,18 +61,21 @@ header {
     height: 30vh;
     background-image: url(/image/banner-1-1600x300.jpg);
 }
+*/
+
 .div-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 #bt-font, #bt-font-index{
     font-family: "open-dyslexic";
     background-color: var(--color1);
     cursor: pointer;
     border: none;
     min-width: 8em;
-    min-height: 2em;
+    min-height: 1em;
     color: white;
     border-radius: 0px;
     box-shadow: 3px 3px rgb(0, 0, 0);
@@ -193,9 +208,17 @@ footer {
     background-color: rgba(0, 0, 0, 0.395);
     color: white;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+
+
 }
 footer > p {
-    padding: 1.5px;
+    padding: auto;
+    margin: 2px;
 }
 .link-footer:hover{
     color: blue;
