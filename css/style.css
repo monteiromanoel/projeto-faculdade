@@ -234,8 +234,8 @@ footer > p {
 
 }
 div > a > img {
-    width: 180px;
-    height: 250px;
+    min-width: 180px;
+    min-height: 250px;
 }
 
 
