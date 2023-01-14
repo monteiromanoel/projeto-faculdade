@@ -3,7 +3,7 @@
     "short_name": "Calculadora Americana",
     "start_url": ".",
     "background_color": "#D3D3D3",
-    "theme_color": "#D3D3D3",
+    "theme_color": "Does not set a theme color for the address bar.Failures: The theme-color meta tag did not contain a valid CSS color.",
     "display": "standalone",
     "icons": [
         {
