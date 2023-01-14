@@ -213,8 +213,6 @@ footer {
     left: 0;
     width: 100%;
     height: fit-content;
-
-
 }
 footer > p {
     padding: auto;
@@ -222,6 +220,22 @@ footer > p {
 }
 .link-footer:hover{
     color: blue;
+}
+#flex-apostilas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+    padding: none;
+    justify-content: center;
+}
+.item-apos {
+
+}
+div > a > img {
+    width: 180px;
+    height: 250px;
 }
 
 
