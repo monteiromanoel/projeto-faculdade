@@ -47,4 +47,14 @@
         </footer>
         -->
     </body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js').then(function () {
+                console.log('SW Registered');
+            })
+            .catch(function () {
+                console.warn('SW failed');
+            });
+        }
+    </script>
 </html>
